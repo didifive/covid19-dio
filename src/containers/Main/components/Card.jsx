@@ -1,5 +1,4 @@
 import React, { memo } from 'react'
-import PropTypes from 'prop-types'
 import { Card as CardUI } from '../../../components'
 import {
   LabelStyled,
@@ -11,7 +10,7 @@ function Card({ value, label, color }) {
   return (
     <CardUI>
       <CardContentStyled color={color}>
-        <ValueStyled>{value}</ValueStyled>
+        <ValueStyled>{value.key !== null ? value.toLocaleString() : 0}</ValueStyled>
         <LabelStyled>{label}</LabelStyled>
       </CardContentStyled>
     </CardUI>
