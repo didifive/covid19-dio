@@ -17,17 +17,18 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     </MenuItem>
   )
 
-  const textCovid19 = `País: ${country} - recuperados: ${recovered}`
+  const textCovid19 = `País: ${country.label} - Recuperados: ${recovered}`
+  const url = 'https://covid19-dio-didi.netlify.app/'
 
   const copyInfo = () => {
-    navigator.clipboard.writeText(textCovid19)
+    navigator.clipboard.writeText(textCovid19 + ' veja em: ' + url)
   }
 
   const shareInfo = () => {
     navigator.share({
-      title: `Dados do Covid19 - ${country}`,
+      title: `Dados do Covid19`,
       text: textCovid19,
-      url: 'https://covid19-dio-didi.netlify.app/'
+      url: url
     })
   }
 
