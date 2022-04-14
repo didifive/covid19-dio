@@ -41,6 +41,11 @@ Abaixo seguem modificações feitas em relação ao projeto base:
 
 ---
 
+Projeto online em: [covid19-dio-didi.netlify.app/](https://covid19-dio-didi.netlify.app/)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5f430aec-e824-4b7b-9b24-e8f158e29da0/deploy-status)](https://app.netlify.com/sites/covid19-dio-didi/deploys)
+
+---
+
 Links Interessantes:
 
 * [HTML5]
