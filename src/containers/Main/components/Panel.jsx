@@ -17,11 +17,16 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     </MenuItem>
   )
 
-  const textCovid19 = `País: ${country.label} - Recuperados: ${recovered}`
+  const textCovid19 = `País: ${data.country} - Total de Recuperados: ${parseInt(recovered).toLocaleString()}`
   const url = 'https://covid19-dio-didi.netlify.app/'
 
   const copyInfo = () => {
-    navigator.clipboard.writeText(textCovid19 + ' veja em: ' + url)
+    navigator.clipboard.writeText(
+      'Dados Covid19 - '
+      + textCovid19 
+      + ' - Veja mais em: ' 
+      + url
+    )
   }
 
   const shareInfo = () => {
